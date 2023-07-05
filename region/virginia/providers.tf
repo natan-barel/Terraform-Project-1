@@ -1,0 +1,34 @@
+terraform {
+  required_version = ">= 0.13.7"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = ">= 4.8.0"
+    }
+    random = {
+      source  = "hashicorp/random"
+      version = ">=3.1.0"
+    }
+    null = {
+      source  = "hashicorp/null"
+      version = ">=3.1.0"
+    }
+    local = {
+      source  = "hashicorp/local"
+      version = ">=2.1.0"
+    }
+    template = {
+      source  = "hashicorp/template"
+      version = ">=2.2.0"
+    }
+  }
+
+  backend "s3" {
+    //NOTE: make sure the bucket exists
+    // You can create bucket using setup module first, change the bucket source and region
+    bucket  = "natanb-s3-bucket-tf-state-20230702100434881400000001"
+    key     = "terraform/backend.tfstate"
+    region  = "us-west-2"
+    encrypt = "true"
+  }
+}
