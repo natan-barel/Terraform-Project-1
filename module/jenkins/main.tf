@@ -25,7 +25,7 @@ resource "aws_instance" "jenkins_server" {
       "sudo amazon-linux-extras install ansible2 -y",
       "sudo yum install git -y",
       "git clone https://github.com/natan-barel/jenkins_setup_ansible.git /tmp/Jenkins_ansible_role",
-      "ansible-playbook /tmp/Jenkins_ansible_role/jenkins_setup_min/install-jenkins.yaml",
+      "ansible-playbook /tmp/Jenkins_ansible_role/jenkins_setup_min/install-jenkins.yml",
     ]
   }
 
