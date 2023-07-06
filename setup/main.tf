@@ -1,7 +1,6 @@
 # Define a s3 bucket to store terraform state file.
 resource "aws_s3_bucket" "terraform_state" {
   //NOTE: make sure the bucket name is global unique, otherwise the creation fails.
-  # bucket_prefix = format("%s-tf-state-%s", var.bucket_prefix, local.region)
   bucket_prefix = format("%s-tf-state-", var.bucket_prefix)
   force_destroy = false
   lifecycle {
