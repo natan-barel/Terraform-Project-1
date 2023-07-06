@@ -1,4 +1,4 @@
-![alt text](https://github.com/[natan-barel]/[Terraform-Project-1]/blob/[master]/tf-project-1-architecture-diagram.png.jpg?raw=true)
+![alt text](https://github.com/natan-barel/Terraform-Project-1/blob/master/tf-project-1-architecture-diagram.png.jpg?raw=true)
 
 ## Infrastructure
 
