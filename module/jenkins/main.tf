@@ -20,9 +20,9 @@ resource "aws_instance" "jenkins_server" {
 
   provisioner "remote-exec" {
     inline = [
-      "sleep 30",
       "sudo yum update",
       "sudo amazon-linux-extras install ansible2 -y",
+      "sudo amazon-linux-extras install java-openjdk11 -y",
       "sudo yum install git -y",
       "git clone https://github.com/natan-barel/jenkins_setup_ansible.git /tmp/Jenkins_ansible_role",
       "ansible-playbook /tmp/Jenkins_ansible_role/jenkins_setup_min/install-jenkins.yml",
