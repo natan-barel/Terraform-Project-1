@@ -77,5 +77,3 @@ Now, all the resources have been built, The next step is to how to verify them.
 + Login Jenkins Server
 
 We can try to login to `Jenkins Server` to test if it works well. We just need to go to the EC2 `public ip` at port `8080`.
-  
-```
