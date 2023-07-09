@@ -24,3 +24,13 @@ module "Scheduler" {
   source       = "../../module/scheduler"
   instance_ids = module.Jenkins.ec2_instance_ids
 }
+module "Sns" {
+  source = "../../module/sns"
+}
+
+module "Eventbridge" {
+  source        = "../../module/eventbridge"
+  sns_topic_arn = module.Sns.sns_topic_arn
+  instance_ids  = module.Jenkins.ec2_instance_ids
+}
+
