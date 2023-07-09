@@ -43,3 +43,4 @@ resource "aws_scheduler_schedule" "stop_scheduler" {
     })
   }
 }
+

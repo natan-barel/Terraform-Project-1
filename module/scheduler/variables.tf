@@ -20,5 +20,3 @@ variable "shared_tags" {
   type        = map(string)
   default     = {}
 }
-
-
