@@ -1,7 +1,7 @@
 variable "region" {
   description = "The name of the aws Region."
   type        = string
-  default     = "us-east-1"
+  default     = "eu-central-1"
 }
 
 variable "acl" {

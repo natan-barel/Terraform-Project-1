@@ -24,6 +24,7 @@ resource "aws_s3_bucket_ownership_controls" "s3_bucket_acl_ownership" {
   rule {
     object_ownership = "ObjectWriter"
   }
+  depends_on = [aws_s3_bucket_public_access_block.terraform_state]
 }
 
 resource "aws_s3_bucket_public_access_block" "terraform_state" {
