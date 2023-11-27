@@ -2,7 +2,7 @@
 
 ## Infrastructure
 
-The purpose of this project is to setup jenkins on Amazon-linux EC2 instance using Terraform and Ansible.
+The purpose of this project is to setup jenkins on Amazon-linux EC2 instance using **Terraform** and **Ansible**.
 
 ## Prerequisites
 
@@ -66,7 +66,9 @@ The following things maybe need to be modified:
 
 You can modify the configuration in the `main.tf` file according to your needs, and then run the following commands
 ```shell
+$ terraform fmt
 $ terraform init
+$ terraform validate
 $ terraform apply
 ```
 
