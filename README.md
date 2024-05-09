@@ -1,6 +1,6 @@
 ![Screenshot](tf-project-1-architecture-diagram.png)
 
-## Infrastructure
+## Project Terraform 1 - AWS Lab – IITC
 
 The purpose of this project is to setup jenkins on Amazon-linux EC2 instance using **Terraform** and **Ansible**.
 
